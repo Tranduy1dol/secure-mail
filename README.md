@@ -1,16 +1,16 @@
 # secure-mail
 
-#**Motivation**
+# **Motivation**
 
 This product is participating in the "Vietnam Hackathon: Onchain Name and Identity" with the topic "Building a Secure Mail System."
 
-#**Features**
+# **Features**
 
 - The front-end is built on ReactJS for a dynamic UI/UX.
 - The email server is configured with Nodemailer and MailTrap.
 - The security phase is built on the S/MIME technique to achieve end-to-end (E2E) encryption for emails. Additionally, the secure system is built with ZKP (Zero-Knowledge Proof).
 
-#**Instructions**
+# **Instructions**
 
 With a Handshake domain, follow these instructions to configure a Handshake domain and the Mailtrap mail server.
 
@@ -21,7 +21,7 @@ npm install
 npm start
 ```
 
-#**Improvements**
+# **Improvements**
 
 In the future, some features will be implemented:
 
@@ -31,7 +31,7 @@ In the future, some features will be implemented:
 - Improve the security phase with zk-email.
 - Improve the resolver so that email addresses will have a Handshake domain after the "@" symbol.
 
-#**Contributor**
+# **Contributor**
 - Tran Manh Duy
 - Ngo Phuong Ha
 - Truong Quang Minh
