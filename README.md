@@ -23,7 +23,7 @@ npm start
 
 # **Improvements**
 
-In the future, some features will be implemented:
+Because of lack of time, resources and skills, some security functions are still evolving. In the future, some of the following functions will continue to be improved:
 
 - Add a CI/CD pipeline for automatic build, deployment, and testing.
 - Optimize the project with Docker.

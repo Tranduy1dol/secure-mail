@@ -17,7 +17,6 @@ app.get('/', (req, res) => {
     res.status(201).json("Health Check PASS");
 });
 
-
 // create reusable transporter object using the default SMTP transport
 const transporter = nodemailer.createTransport({
     host: 'sandbox.smtp.mailtrap.io',
@@ -27,6 +26,7 @@ const transporter = nodemailer.createTransport({
         pass: process.env.PASSWORD, // generated mailtrap password
     }
 });
+
 // generate email body using Mailgen
 const MailGenerator = new Mailgen({
     theme: "default",
@@ -35,6 +35,7 @@ const MailGenerator = new Mailgen({
         link: 'https://mailgen.js/'
     }
 })
+
 // define a route for sending emails
 app.post('/send-email', (req, res) => {
     // get the recipient's email address, subject and message from the request body

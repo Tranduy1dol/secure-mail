@@ -8,10 +8,6 @@ import ChevronLeftIcon from "@material-ui/icons/ChevronLeft";
 import ChevronRightIcon from "@material-ui/icons/ChevronRight";
 import KeyboardHideIcon from "@material-ui/icons/KeyboardHide";
 import SettingsIcon from "@material-ui/icons/Settings";
-import InboxIcon from "@material-ui/icons/Inbox";
-import PeopleIcon from "@material-ui/icons/People";
-import LocalOfferIcon from "@material-ui/icons/LocalOffer";
-import Section from "../Section/Section";
 import EmailRow from "../EmailRow/EmailRow";
 
 function EmailList({ emails }) {
