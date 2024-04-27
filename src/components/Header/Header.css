@@ -1,0 +1,132 @@
+:root {
+    --primary-color-hue: 252;
+    --dark-color-lightness: 17%;
+    --light-color-lightness: 95%;
+    --white-color-lightness: 100%;
+
+    --color-white: hsl(252, 30%, var(--white-color-lightness));
+    --color-light: hsl(252,30%,var(--light-color-lightness));
+    --color-gray: hsl(var(--primary-color-hue), 15%, 65%);
+    --color-primary: hsl(var(--primary-color-hue),75%,60%);
+    --color-secondary: hsl(252,100%,90%);
+    --color-sucess: hsl(120,95%,65%);
+    --color-danger: hsl(0,95%,65%);
+    --color-dark: hsl(252,30%,var(--dark-color-lightness));
+    --color-black: hsl(252,30%,10%);
+
+    --border-radius: 2rem;
+    --card-border-radius: 1rem;
+    --btn-padding: 0.6rem 2rem;
+    --search-padding: 0.6rem 1rem;
+    --card-padding: 1rem;
+
+    --sticky-top-left: 5.4rem;
+    --sticky-top-right: -18rem;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    border: none;
+}
+
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid whitesmoke;
+    background: var(--color-white);
+    padding: 0.4rem;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+}
+
+.header-left > img {
+    object-fit: contain;
+    height: 35px;
+    margin-left: 5px;
+}
+
+.header-middle {
+    display: flex;
+    align-items: center;
+    flex: 0.7;
+    background: var(--color-light);
+    padding: 8px 15px;
+    margin: 10px;
+    border-radius: var(--border-radius);
+    
+}
+
+.header-middle > .MuiSvgIcon-root {
+    color:gray;
+    
+}
+
+.header-middle > input {
+    border: none;
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    font-size: 1rem;
+    background-color: transparent;
+    color: var(--color-dark);
+}
+
+.header-right{
+    display: flex;
+    padding-right: 20px;
+    align-items: center;
+}
+
+.header-right .create {
+    display: flex;
+    align-items: center;
+    background: var(--color-primary);
+    border-radius: var(--border-radius);
+    margin-right: 0.8rem;
+}
+
+
+.btn {
+    display: inline-block;
+    padding: var(--btn-padding);
+    font-weight: 500;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    transition: all 300ms ease;
+    font-size: 0.9rem;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+.btn-primary {
+    background: var(--color-primary);
+    color: white;
+}
+
+@media only screen and (max-width: 500px) {
+    .header-left > .MuiIconButton-root{
+        display: none !important;
+    }
+  
+    .header-middle {
+        margin: 10px 0px;
+    }  
+    .header-right > .MuiIconButton-root{
+        padding: 5px !important;
+        display: none !important;
+    }
+  }
