@@ -4,7 +4,7 @@ import { login } from "../../features/userSlice";
 import { auth, provider } from "../../firebase";
 import "./Login.css";
 
-const { keygen } = require("/secure/KeyGen/generate_keypair")
+export const { keypair } = require("../../secure/KeyGen/generate_keypair")
 
 function Login() {
     const [isActive, setIsActive] = useState(false);
@@ -19,9 +19,7 @@ function Login() {
                     photoUrl: user.photoURL,
                 })
             );
-            export function keypair() {
-                return keygen(user.email);
-            }
+            keypair(user.email);
             //call contract to save email hash and public key to user
         });
     };

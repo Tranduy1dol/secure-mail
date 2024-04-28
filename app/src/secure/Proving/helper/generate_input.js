@@ -7,7 +7,7 @@ const deploy = require("../../Contract/deploy"); // Replace with actual implemen
 const contract_address = deploy(); // Assuming deploy returns a promise or resolves to the address
 const abi = require("../../Contract/compile").abi; // Assuming abi is exported as default
 
-async function generateCircuitInput( { sender_pubkey, receiver_address, content }: {
+export async function generateCircuitInput( { sender_pubkey, receiver_address, content }: {
     sender_pubkey: string,
     receiver_address: string,
     content: string

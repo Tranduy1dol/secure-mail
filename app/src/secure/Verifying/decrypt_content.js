@@ -1,5 +1,5 @@
 import web3 from "web3/src/web3";
-import {decrypt} from "/secure/Proving/helper/crypt_function";
+import { decrypt } from "../Proving/helper/crypt_function";
 
 const deploy = require('../Contract/deploy');
 const abi = require('../Contract/abi');

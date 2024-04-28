@@ -5,8 +5,9 @@ import { Button } from "@material-ui/core";
 import { useForm } from "react-hook-form";
 import { useDispatch } from "react-redux";
 import { closeSendMessage } from "../../features/mailSlice";
-import { encrypted } from "/secure/Proving/helper/generate_input";
 import { keypair } from "../Login/Login";
+
+const { generateCircuitInput } = require("../../secure/Proving/helper/generate_input")
 
 function SendMail() {
   const {
@@ -26,7 +27,7 @@ function SendMail() {
 
   const onSubmit = (formData) => {
     console.log(formData);
-    const email_encrypted = encrypted({
+    const email_encrypted = generateCircuitInput({
       sender_pubkey: keypair.pubkey,
       receiver_address: formData.to,
       content: formData.message,

@@ -26,5 +26,5 @@ const abi = JSON.parse(solc.compile(JSON.stringify(input))).contracts['Smail.sol
 const evm = JSON.parse(solc.compile(JSON.stringify(input))).contracts['Smail.sol']['Smail'].evm;
 fs.writeFileSync('abi.json', JSON.stringify(abi), 'utf8');
 module.exports = { abi, evm };
-console.log(evm);
+
 
