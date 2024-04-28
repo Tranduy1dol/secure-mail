@@ -17,6 +17,7 @@ With a Handshake domain, follow these instructions to configure a Handshake doma
 To run the front-end:
 
 ```
+cd app
 npm install
 npm start
 ```
